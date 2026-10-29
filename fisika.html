@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rangkuman Fisika TKA Saintek</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+  <script defer src="../js/app.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="navbar-brand">
+        <div class="logo-icon">TKA</div>
+        <span>Saintek Study</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">🏠 Beranda</a></li>
+        <li><a href="matematika.html">📐 Matematika</a></li>
+        <li><a href="fisika.html" class="active">⚡ Fisika</a></li>
+        <li><a href="latihan-matematika.html">📝 Latihan MTK</a></li>
+        <li><a href="latihan-fisika.html">📝 Latihan Fisika</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header" style="background: linear-gradient(135deg, #ea4335, #ff6b6b); color:#fff; padding:60px 24px;">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.8)">
+      <a href="../index.html" style="color:#fff">Beranda</a>
+      <span>›</span>
+      <span>Rangkuman Fisika</span>
+    </div>
+    <h1 style="font-size:2.2rem; font-weight:900;">⚡ Rangkuman Fisika TKA</h1>
+    <p style="opacity:0.9; max-width:600px; margin:12px auto 0;">Materi lengkap 8 topik utama berdasarkan kisi-kisi Kemendikbudristek</p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content-layout" style="padding-top:40px;">
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">📋 Daftar Materi</div>
+        <ul class="sidebar-nav">
+          <li><a href="#mekanika" class="active">Mekanika</a></li>
+          <li><a href="#usaha">Usaha, Energi & Momentum</a></li>
+          <li><a href="#fluida">Fluida</a></li>
+          <li><a href="#termodinamika">Termodinamika</a></li>
+          <li><a href="#gelombang">Gelombang & Bunyi</a></li>
+          <li><a href="#listrik">Listrik & Magnet</a></li>
+          <li><a href="#optik">Optik</a></li>
+          <li><a href="#modern">Fisika Modern</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card" style="margin-top:16px;">
+        <a href="latihan-fisika.html" class="btn btn-danger btn-sm" style="width:100%; justify-content:center;">📝 Latihan Soal</a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- 1. MEKANIKA -->
+      <div class="content-card" id="mekanika">
+        <h2>1. Mekanika (Gerak & Gaya)</h2>
+        
+        <h3>1.1 Gerak Lurus Beraturan (GLB)</h3>
+        <div class="formula-box physics-formula">
+          $v = \frac{s}{t}$ &nbsp; atau &nbsp; $s = v \cdot t$<br>
+          Kecepatan konstan, percepatan = 0
+        </div>
+
+        <h3>1.2 Gerak Lurus Berubah Beraturan (GLBB)</h3>
+        <div class="formula-box physics-formula">
+          $v_t = v_0 + at$<br>
+          $s = v_0 t + \frac{1}{2}at^2$<br>
+          $v_t^2 = v_0^2 + 2as$
+        </div>
+
+        <h3>1.3 Gerak Vertikal</h3>
+        <p>Gunakan rumus GLBB dengan $a = g = 9.8 \text{ m/s}^2$ (ke bawah) atau $a = -g$ (ke atas).</p>
+        <div class="formula-box physics-formula">
+          <strong>Jatuh bebas ($v_0 = 0$):</strong><br>
+          $h = \frac{1}{2}gt^2$, &nbsp; $v = gt$, &nbsp; $v = \sqrt{2gh}$<br><br>
+          <strong>Gerak vertikal ke atas:</strong><br>
+          Tinggi maks: $h_{max} = \frac{v_0^2}{2g}$, &nbsp; Waktu naik: $t = \frac{v_0}{g}$
+        </div>
+
+        <h3>1.4 Gerak Parabola</h3>
+        <div class="formula-box physics-formula">
+          $x = v_0 \cos\theta \cdot t$<br>
+          $y = v_0 \sin\theta \cdot t - \frac{1}{2}gt^2$<br><br>
+          <strong>Tinggi maks:</strong> $H = \frac{v_0^2 \sin^2\theta}{2g}$<br>
+          <strong>Jarak maks:</strong> $R = \frac{v_0^2 \sin 2\theta}{g}$<br>
+          <strong>Waktu tempuh:</strong> $T = \frac{2v_0 \sin\theta}{g}$
+        </div>
+
+        <h3>1.5 Hukum Newton</h3>
+        <div class="formula-box physics-formula">
+          <strong>Hukum I:</strong> $\sum F = 0$ → benda diam atau GLB<br>
+          <strong>Hukum II:</strong> $\sum F = ma$<br>
+          <strong>Hukum III:</strong> $F_{aksi} = -F_{reaksi}$
+        </div>
+
+        <h3>1.6 Gerak Melingkar</h3>
+        <div class="formula-box physics-formula">
+          $v = \omega r$, &nbsp; $\omega = \frac{2\pi}{T} = 2\pi f$<br>
+          $a_s = \frac{v^2}{r} = \omega^2 r$ &nbsp; (percepatan sentripetal)<br>
+          $F_s = \frac{mv^2}{r}$ &nbsp; (gaya sentripetal)
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Mekanika adalah topik dengan porsi terbesar di TKA Fisika. Pahami gerak parabola dan hukum Newton pada sistem katrol/bidang miring.
+        </div>
+      </div>
+
+      <!-- 2. USAHA, ENERGI & MOMENTUM -->
+      <div class="content-card" id="usaha">
+        <h2>2. Usaha, Energi & Momentum</h2>
+        
+        <h3>2.1 Usaha (Kerja)</h3>
+        <div class="formula-box physics-formula">
+          $W = F \cdot s \cdot \cos\theta$<br>
+          $W = \Delta EK = \frac{1}{2}mv_2^2 - \frac{1}{2}mv_1^2$ &nbsp; (teorema usaha-energi)
+        </div>
+
+        <h3>2.2 Energi</h3>
+        <div class="formula-box physics-formula">
+          <strong>Energi Kinetik:</strong> $EK = \frac{1}{2}mv^2$<br>
+          <strong>Energi Potensial Gravitasi:</strong> $EP = mgh$<br>
+          <strong>Energi Potensial Pegas:</strong> $EP = \frac{1}{2}kx^2$<br><br>
+          <strong>Hukum Kekekalan Energi Mekanik:</strong><br>
+          $EM_1 = EM_2$ &nbsp;→&nbsp; $EK_1 + EP_1 = EK_2 + EP_2$
+        </div>
+
+        <h3>2.3 Daya</h3>
+        <div class="formula-box physics-formula">
+          $P = \frac{W}{t} = F \cdot v$
+        </div>
+
+        <h3>2.4 Momentum & Impuls</h3>
+        <div class="formula-box physics-formula">
+          <strong>Momentum:</strong> $p = mv$<br>
+          <strong>Impuls:</strong> $I = F \cdot \Delta t = \Delta p$<br><br>
+          <strong>Hukum Kekekalan Momentum:</strong><br>
+          $m_1v_1 + m_2v_2 = m_1v_1' + m_2v_2'$
+        </div>
+
+        <h3>2.5 Tumbukan</h3>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Jenis</th><th>Koefisien Restitusi ($e$)</th><th>Sifat</th></tr>
+            <tr><td>Lenting sempurna</td><td>$e = 1$</td><td>EK kekal</td></tr>
+            <tr><td>Lenting sebagian</td><td>$0 < e < 1$</td><td>EK berkurang</td></tr>
+            <tr><td>Tidak lenting sama sekali</td><td>$e = 0$</td><td>Benda menempel</td></tr>
+          </table>
+        </div>
+        <div class="formula-box physics-formula">
+          $e = -\frac{v_1' - v_2'}{v_1 - v_2}$
+        </div>
+      </div>
+
+      <!-- 3. FLUIDA -->
+      <div class="content-card" id="fluida">
+        <h2>3. Fluida Statis & Dinamis</h2>
+        
+        <h3>3.1 Tekanan Hidrostatis</h3>
+        <div class="formula-box physics-formula">
+          $P = \rho g h$<br>
+          $P_{total} = P_{atm} + \rho g h$
+        </div>
+
+        <h3>3.2 Hukum Pascal</h3>
+        <div class="formula-box physics-formula">
+          $\frac{F_1}{A_1} = \frac{F_2}{A_2}$
+        </div>
+
+        <h3>3.3 Hukum Archimedes</h3>
+        <div class="formula-box physics-formula">
+          $F_A = \rho_{fluida} \cdot g \cdot V_{tercelup}$<br><br>
+          Benda terapung: $\rho_{benda} < \rho_{fluida}$<br>
+          Benda melayang: $\rho_{benda} = \rho_{fluida}$<br>
+          Benda tenggelam: $\rho_{benda} > \rho_{fluida}$
+        </div>
+
+        <h3>3.4 Fluida Dinamis</h3>
+        <div class="formula-box physics-formula">
+          <strong>Persamaan Kontinuitas:</strong> $A_1 v_1 = A_2 v_2$<br><br>
+          <strong>Persamaan Bernoulli:</strong><br>
+          $P_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2$<br><br>
+          <strong>Torricelli:</strong> $v = \sqrt{2gh}$ &nbsp; (kecepatan air keluar lubang)
+        </div>
+      </div>
+
+      <!-- 4. TERMODINAMIKA -->
+      <div class="content-card" id="termodinamika">
+        <h2>4. Termodinamika</h2>
+        
+        <h3>4.1 Suhu & Kalor</h3>
+        <div class="formula-box physics-formula">
+          <strong>Kalor:</strong> $Q = mc\Delta T$<br>
+          <strong>Kalor laten:</strong> $Q = mL$<br>
+          <strong>Asas Black:</strong> $Q_{lepas} = Q_{terima}$
+        </div>
+
+        <h3>4.2 Pemuaian</h3>
+        <div class="formula-box physics-formula">
+          <strong>Panjang:</strong> $\Delta L = L_0 \alpha \Delta T$<br>
+          <strong>Luas:</strong> $\Delta A = A_0 \cdot 2\alpha \cdot \Delta T$<br>
+          <strong>Volume:</strong> $\Delta V = V_0 \cdot 3\alpha \cdot \Delta T$
+        </div>
+
+        <h3>4.3 Gas Ideal</h3>
+        <div class="formula-box physics-formula">
+          $PV = nRT$ &nbsp; atau &nbsp; $PV = NkT$<br>
+          $\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}$<br><br>
+          Energi kinetik rata-rata: $\bar{E_k} = \frac{3}{2}kT$
+        </div>
+
+        <h3>4.4 Hukum Termodinamika</h3>
+        <div class="formula-box physics-formula">
+          <strong>Hukum I:</strong> $\Delta U = Q - W$<br><br>
+          <strong>Proses:</strong><br>
+          • Isotermal ($T$ tetap): $W = nRT\ln\frac{V_2}{V_1}$, $\Delta U = 0$<br>
+          • Isobarik ($P$ tetap): $W = P\Delta V$<br>
+          • Isokhorik ($V$ tetap): $W = 0$<br>
+          • Adiabatik ($Q = 0$): $\Delta U = -W$
+        </div>
+      </div>
+
+      <!-- 5. GELOMBANG -->
+      <div class="content-card" id="gelombang">
+        <h2>5. Gelombang & Bunyi</h2>
+        
+        <h3>5.1 Gelombang Mekanik</h3>
+        <div class="formula-box physics-formula">
+          $v = \lambda f = \frac{\lambda}{T}$<br>
+          $y = A\sin(\omega t - kx)$<br>
+          $\omega = 2\pi f$, &nbsp; $k = \frac{2\pi}{\lambda}$
+        </div>
+
+        <h3>5.2 Gelombang Stasioner</h3>
+        <div class="formula-box physics-formula">
+          <strong>Ujung tetap:</strong> $y = 2A\sin(kx)\cos(\omega t)$<br>
+          <strong>Ujung bebas:</strong> $y = 2A\cos(kx)\sin(\omega t)$
+        </div>
+
+        <h3>5.3 Bunyi</h3>
+        <div class="formula-box physics-formula">
+          <strong>Intensitas:</strong> $I = \frac{P}{4\pi r^2}$<br>
+          <strong>Taraf intensitas:</strong> $TI = 10\log\frac{I}{I_0}$ dB<br><br>
+          <strong>Efek Doppler:</strong><br>
+          $f_p = f_s \cdot \frac{v \pm v_p}{v \mp v_s}$<br>
+          (+$v_p$: pendengar mendekati, −$v_s$: sumber mendekati)
+        </div>
+
+        <h3>5.4 Dawai & Pipa Organa</h3>
+        <div class="formula-box physics-formula">
+          <strong>Dawai (kedua ujung tetap):</strong> $f_n = \frac{n}{2L}\sqrt{\frac{F}{\mu}}$<br><br>
+          <strong>Pipa organa terbuka:</strong> $f_n = \frac{nv}{2L}$ (n = 1,2,3...)<br>
+          <strong>Pipa organa tertutup:</strong> $f_n = \frac{nv}{4L}$ (n = 1,3,5...)
+        </div>
+      </div>
+
+      <!-- 6. LISTRIK & MAGNET -->
+      <div class="content-card" id="listrik">
+        <h2>6. Listrik & Magnet</h2>
+        
+        <h3>6.1 Hukum Coulomb</h3>
+        <div class="formula-box physics-formula">
+          $F = k\frac{q_1 q_2}{r^2}$, &nbsp; $k = 9 \times 10^9 \text{ Nm}^2/\text{C}^2$
+        </div>
+
+        <h3>6.2 Medan Listrik & Potensial</h3>
+        <div class="formula-box physics-formula">
+          $E = k\frac{q}{r^2} = \frac{F}{q_0}$<br>
+          $V = k\frac{q}{r}$<br>
+          $EP = k\frac{q_1 q_2}{r} = q_0 V$
+        </div>
+
+        <h3>6.3 Kapasitor</h3>
+        <div class="formula-box physics-formula">
+          $C = \frac{Q}{V}$, &nbsp; $E = \frac{1}{2}CV^2$<br><br>
+          <strong>Seri:</strong> $\frac{1}{C_{total}} = \frac{1}{C_1} + \frac{1}{C_2}$<br>
+          <strong>Paralel:</strong> $C_{total} = C_1 + C_2$
+        </div>
+
+        <h3>6.4 Rangkaian Listrik (Hukum Ohm & Kirchhoff)</h3>
+        <div class="formula-box physics-formula">
+          $V = IR$, &nbsp; $P = VI = I^2R = \frac{V^2}{R}$<br><br>
+          <strong>Seri:</strong> $R_{total} = R_1 + R_2 + ...$<br>
+          <strong>Paralel:</strong> $\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + ...$<br><br>
+          <strong>Kirchhoff I:</strong> $\sum I_{masuk} = \sum I_{keluar}$<br>
+          <strong>Kirchhoff II:</strong> $\sum \varepsilon = \sum IR$
+        </div>
+
+        <h3>6.5 Gaya Magnet</h3>
+        <div class="formula-box physics-formula">
+          <strong>Gaya Lorentz pada kawat:</strong> $F = BIL\sin\theta$<br>
+          <strong>Gaya pada muatan:</strong> $F = qvB\sin\theta$<br><br>
+          <strong>Induksi Faraday:</strong> $\varepsilon = -N\frac{d\Phi}{dt}$, &nbsp; $\Phi = BA\cos\theta$
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Listrik & magnet adalah topik favorit TKA. Fokus pada rangkaian campuran (seri-paralel), hukum Kirchhoff, dan induksi elektromagnetik.
+        </div>
+      </div>
+
+      <!-- 7. OPTIK -->
+      <div class="content-card" id="optik">
+        <h2>7. Optik (Cahaya & Lensa)</h2>
+        
+        <h3>7.1 Pemantulan & Pembiasan</h3>
+        <div class="formula-box physics-formula">
+          <strong>Hukum Snellius:</strong> $n_1 \sin\theta_1 = n_2 \sin\theta_2$<br><br>
+          <strong>Sudut kritis:</strong> $\sin\theta_c = \frac{n_2}{n_1}$ &nbsp; (untuk $n_1 > n_2$)
+        </div>
+
+        <h3>7.2 Cermin</h3>
+        <div class="formula-box physics-formula">
+          $\frac{1}{f} = \frac{1}{s} + \frac{1}{s'}$<br>
+          $M = -\frac{s'}{s} = \frac{h'}{h}$<br>
+          $f = \frac{R}{2}$
+        </div>
+
+        <h3>7.3 Lensa</h3>
+        <div class="formula-box physics-formula">
+          $\frac{1}{f} = \frac{1}{s} + \frac{1}{s'}$<br>
+          $P = \frac{1}{f}$ &nbsp; (kuat lensa, dalam dioptri)<br><br>
+          <strong>Lensa tipis gabungan:</strong> $P_{total} = P_1 + P_2$
+        </div>
+
+        <h3>7.4 Alat Optik</h3>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Alat</th><th>Rumus Perbesaran</th></tr>
+            <tr><td>Lup (mata berakomodasi maks)</td><td>$M = \frac{s_n}{f} + 1$</td></tr>
+            <tr><td>Lup (mata tak berakomodasi)</td><td>$M = \frac{s_n}{f}$</td></tr>
+            <tr><td>Mikroskop</td><td>$M = M_{ob} \times M_{ok}$</td></tr>
+            <tr><td>Teropong</td><td>$M = \frac{f_{ob}}{f_{ok}}$</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 8. FISIKA MODERN -->
+      <div class="content-card" id="modern">
+        <h2>8. Fisika Modern & Atom</h2>
+        
+        <h3>8.1 Efek Fotolistrik</h3>
+        <div class="formula-box physics-formula">
+          $E = hf = \frac{hc}{\lambda}$<br>
+          $EK_{max} = hf - W_0 = hf - hf_0$<br>
+          $eV_0 = hf - W_0$ &nbsp; (potensial penghenti)
+        </div>
+
+        <h3>8.2 Dualisme Gelombang-Partikel</h3>
+        <div class="formula-box physics-formula">
+          <strong>de Broglie:</strong> $\lambda = \frac{h}{p} = \frac{h}{mv}$
+        </div>
+
+        <h3>8.3 Teori Atom Bohr</h3>
+        <div class="formula-box physics-formula">
+          <strong>Jari-jari orbit:</strong> $r_n = n^2 r_1$ &nbsp; ($r_1 = 0.53$ Å)<br>
+          <strong>Energi:</strong> $E_n = \frac{E_1}{n^2}$ &nbsp; ($E_1 = -13.6$ eV)<br><br>
+          <strong>Energi foton saat transisi:</strong><br>
+          $\Delta E = E_1\left(\frac{1}{n_f^2} - \frac{1}{n_i^2}\right) = hf$
+        </div>
+
+        <h3>8.4 Inti Atom & Radioaktivitas</h3>
+        <div class="formula-box physics-formula">
+          <strong>Peluruhan:</strong> $N = N_0 \left(\frac{1}{2}\right)^{t/t_{1/2}}$<br><br>
+          <strong>Energi ikat:</strong> $E = \Delta m \cdot c^2$<br>
+          $\Delta m = [Zm_p + (A-Z)m_n] - m_{inti}$
+        </div>
+
+        <div class="table-responsive">
+          <table>
+            <tr><th>Radiasi</th><th>Simbol</th><th>Muatan</th><th>Daya Tembus</th></tr>
+            <tr><td>Alfa</td><td>$\alpha$ ($^4_2$He)</td><td>+2</td><td>Rendah</td></tr>
+            <tr><td>Beta</td><td>$\beta$ ($^0_{-1}$e)</td><td>−1</td><td>Sedang</td></tr>
+            <tr><td>Gamma</td><td>$\gamma$</td><td>0</td><td>Tinggi</td></tr>
+          </table>
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Fisika modern semakin sering muncul di TKA. Fokus pada efek fotolistrik, atom Bohr, dan peluruhan radioaktif.
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="../index.html">Beranda</a>
+      <a href="matematika.html">Matematika</a>
+      <a href="fisika.html">Fisika</a>
+      <a href="latihan-matematika.html">Latihan MTK</a>
+      <a href="latihan-fisika.html">Latihan Fisika</a>
+    </div>
+    <p>📚 TKA Saintek Study — Referensi: Kemendikbudristek | Kurikulum Merdeka</p>
+  </footer>
+
+  <button class="scroll-top">↑</button>
+</body>
+</html>

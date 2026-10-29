@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rangkuman Matematika TKA Saintek</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+  <script defer src="../js/app.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="navbar-brand">
+        <div class="logo-icon">TKA</div>
+        <span>Saintek Study</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="../index.html">🏠 Beranda</a></li>
+        <li><a href="matematika.html" class="active">📐 Matematika</a></li>
+        <li><a href="fisika.html">⚡ Fisika</a></li>
+        <li><a href="latihan-matematika.html">📝 Latihan MTK</a></li>
+        <li><a href="latihan-fisika.html">📝 Latihan Fisika</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header" style="background: linear-gradient(135deg, #1a73e8, #4285f4); color:#fff; padding:60px 24px;">
+    <div class="breadcrumb" style="color:rgba(255,255,255,0.8)">
+      <a href="../index.html" style="color:#fff">Beranda</a>
+      <span>›</span>
+      <span>Rangkuman Matematika</span>
+    </div>
+    <h1 style="font-size:2.2rem; font-weight:900;">📐 Rangkuman Matematika TKA</h1>
+    <p style="opacity:0.9; max-width:600px; margin:12px auto 0;">Materi lengkap 8 topik utama berdasarkan kisi-kisi Kemendikbudristek</p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content-layout" style="padding-top:40px;">
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">📋 Daftar Materi</div>
+        <ul class="sidebar-nav">
+          <li><a href="#aljabar" class="active">Aljabar & Persamaan</a></li>
+          <li><a href="#trigonometri">Trigonometri</a></li>
+          <li><a href="#kalkulus">Kalkulus</a></li>
+          <li><a href="#geometri">Geometri & Vektor</a></li>
+          <li><a href="#statistika">Statistika & Peluang</a></li>
+          <li><a href="#barisan">Barisan & Deret</a></li>
+          <li><a href="#matriks">Matriks</a></li>
+          <li><a href="#logika">Logika Matematika</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card" style="margin-top:16px;">
+        <a href="latihan-matematika.html" class="btn btn-primary btn-sm" style="width:100%; justify-content:center;">📝 Latihan Soal</a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- 1. ALJABAR -->
+      <div class="content-card" id="aljabar">
+        <h2>1. Aljabar & Persamaan</h2>
+        
+        <h3>1.1 Persamaan Linear</h3>
+        <p>Persamaan linear satu variabel memiliki bentuk umum:</p>
+        <div class="formula-box">$ax + b = 0 \implies x = -\frac{b}{a}$</div>
+        
+        <p>Sistem persamaan linear dua variabel (SPLDV):</p>
+        <div class="formula-box">
+          $a_1x + b_1y = c_1$<br>
+          $a_2x + b_2y = c_2$<br><br>
+          Metode: <strong>Substitusi</strong>, <strong>Eliminasi</strong>, atau <strong>Determinan (Cramer)</strong>
+        </div>
+
+        <h3>1.2 Persamaan Kuadrat</h3>
+        <p>Bentuk umum: $ax^2 + bx + c = 0$</p>
+        <div class="formula-box">
+          <strong>Rumus ABC (Kuadratik):</strong><br>
+          $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+        </div>
+        
+        <p><strong>Diskriminan</strong> $D = b^2 - 4ac$ menentukan sifat akar:</p>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Diskriminan</th><th>Sifat Akar</th></tr>
+            <tr><td>$D > 0$</td><td>Dua akar real berbeda</td></tr>
+            <tr><td>$D = 0$</td><td>Dua akar real sama (kembar)</td></tr>
+            <tr><td>$D < 0$</td><td>Tidak ada akar real</td></tr>
+          </table>
+        </div>
+
+        <p><strong>Rumus Vieta</strong> — Jika $x_1, x_2$ akar dari $ax^2+bx+c=0$:</p>
+        <div class="formula-box">
+          $x_1 + x_2 = -\frac{b}{a}$<br>
+          $x_1 \cdot x_2 = \frac{c}{a}$
+        </div>
+
+        <h3>1.3 Pertidaksamaan</h3>
+        <p>Untuk pertidaksamaan kuadrat $ax^2 + bx + c > 0$:</p>
+        <ul>
+          <li>Faktorkan menjadi $a(x-x_1)(x-x_2)$</li>
+          <li>Gunakan garis bilangan atau tabel tanda</li>
+          <li>Perhatikan tanda koefisien $a$</li>
+        </ul>
+
+        <h3>1.4 Fungsi Komposisi & Invers</h3>
+        <div class="formula-box">
+          <strong>Komposisi:</strong> $(f \circ g)(x) = f(g(x))$<br><br>
+          <strong>Invers:</strong> $f(f^{-1}(x)) = x$<br>
+          Cara: tulis $y = f(x)$, tukar $x$ dan $y$, lalu selesaikan untuk $y$
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Soal aljabar TKA sering mengombinasikan persamaan kuadrat dengan fungsi komposisi. Pastikan kamu menguasai rumus Vieta karena sangat sering digunakan!
+        </div>
+      </div>
+
+      <!-- 2. TRIGONOMETRI -->
+      <div class="content-card" id="trigonometri">
+        <h2>2. Trigonometri</h2>
+        
+        <h3>2.1 Perbandingan Trigonometri</h3>
+        <p>Pada segitiga siku-siku:</p>
+        <div class="formula-box">
+          $\sin\theta = \frac{\text{depan}}{\text{miring}}$, &nbsp;
+          $\cos\theta = \frac{\text{samping}}{\text{miring}}$, &nbsp;
+          $\tan\theta = \frac{\text{depan}}{\text{samping}}$
+        </div>
+
+        <h3>2.2 Sudut Istimewa</h3>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Sudut</th><th>$\sin$</th><th>$\cos$</th><th>$\tan$</th></tr>
+            <tr><td>$0°$</td><td>$0$</td><td>$1$</td><td>$0$</td></tr>
+            <tr><td>$30°$</td><td>$\frac{1}{2}$</td><td>$\frac{\sqrt{3}}{2}$</td><td>$\frac{1}{\sqrt{3}}$</td></tr>
+            <tr><td>$45°$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$1$</td></tr>
+            <tr><td>$60°$</td><td>$\frac{\sqrt{3}}{2}$</td><td>$\frac{1}{2}$</td><td>$\sqrt{3}$</td></tr>
+            <tr><td>$90°$</td><td>$1$</td><td>$0$</td><td>$\infty$</td></tr>
+          </table>
+        </div>
+
+        <h3>2.3 Identitas Trigonometri</h3>
+        <div class="formula-box">
+          $\sin^2\theta + \cos^2\theta = 1$<br>
+          $1 + \tan^2\theta = \sec^2\theta$<br>
+          $1 + \cot^2\theta = \csc^2\theta$
+        </div>
+
+        <h3>2.4 Rumus Jumlah & Selisih Sudut</h3>
+        <div class="formula-box">
+          $\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B$<br>
+          $\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$<br>
+          $\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$
+        </div>
+
+        <h3>2.5 Rumus Sudut Ganda</h3>
+        <div class="formula-box">
+          $\sin 2A = 2\sin A \cos A$<br>
+          $\cos 2A = \cos^2 A - \sin^2 A = 2\cos^2 A - 1 = 1 - 2\sin^2 A$<br>
+          $\tan 2A = \frac{2\tan A}{1 - \tan^2 A}$
+        </div>
+
+        <h3>2.6 Aturan Sinus & Cosinus</h3>
+        <div class="formula-box">
+          <strong>Aturan Sinus:</strong> $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$<br><br>
+          <strong>Aturan Cosinus:</strong> $c^2 = a^2 + b^2 - 2ab\cos C$
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Hafal sudut istimewa dan rumus sudut ganda. Soal TKA sering menguji kemampuan menyederhanakan ekspresi trigonometri menggunakan identitas.
+        </div>
+      </div>
+
+      <!-- 3. KALKULUS -->
+      <div class="content-card" id="kalkulus">
+        <h2>3. Kalkulus (Limit, Turunan, Integral)</h2>
+        
+        <h3>3.1 Limit Fungsi</h3>
+        <p><strong>Limit Aljabar:</strong></p>
+        <div class="formula-box">
+          $\lim_{x \to a} \frac{f(x)}{g(x)}$ — jika $\frac{0}{0}$, faktorkan lalu sederhanakan<br><br>
+          $\lim_{x \to \infty} \frac{ax^n + ...}{bx^m + ...} = \begin{cases} \frac{a}{b} & \text{jika } n = m \\ 0 & \text{jika } n < m \\ \pm\infty & \text{jika } n > m \end{cases}$
+        </div>
+
+        <p><strong>Limit Trigonometri:</strong></p>
+        <div class="formula-box">
+          $\lim_{x \to 0} \frac{\sin x}{x} = 1$<br>
+          $\lim_{x \to 0} \frac{\tan x}{x} = 1$<br>
+          $\lim_{x \to 0} \frac{\sin ax}{\sin bx} = \frac{a}{b}$
+        </div>
+
+        <h3>3.2 Turunan (Diferensial)</h3>
+        <div class="formula-box">
+          $f(x) = x^n \implies f'(x) = nx^{n-1}$<br><br>
+          <strong>Aturan Perkalian:</strong> $(uv)' = u'v + uv'$<br>
+          <strong>Aturan Pembagian:</strong> $\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}$<br>
+          <strong>Aturan Rantai:</strong> $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$
+        </div>
+
+        <p><strong>Turunan Trigonometri:</strong></p>
+        <div class="formula-box">
+          $(\sin x)' = \cos x$, &nbsp; $(\cos x)' = -\sin x$, &nbsp; $(\tan x)' = \sec^2 x$
+        </div>
+
+        <p><strong>Aplikasi Turunan:</strong></p>
+        <ul>
+          <li><strong>Persamaan garis singgung:</strong> $y - y_1 = f'(x_1)(x - x_1)$</li>
+          <li><strong>Nilai maksimum/minimum:</strong> $f'(x) = 0$ → uji titik kritis</li>
+          <li><strong>Titik belok:</strong> $f''(x) = 0$</li>
+        </ul>
+
+        <h3>3.3 Integral</h3>
+        <div class="formula-box">
+          <strong>Integral Tak Tentu:</strong><br>
+          $\int x^n \, dx = \frac{x^{n+1}}{n+1} + C$ &nbsp; (untuk $n \neq -1$)<br><br>
+          <strong>Integral Tentu:</strong><br>
+          $\int_a^b f(x)\,dx = F(b) - F(a)$
+        </div>
+
+        <p><strong>Integral Trigonometri:</strong></p>
+        <div class="formula-box">
+          $\int \sin x\,dx = -\cos x + C$<br>
+          $\int \cos x\,dx = \sin x + C$
+        </div>
+
+        <p><strong>Aplikasi Integral:</strong></p>
+        <ul>
+          <li><strong>Luas daerah:</strong> $L = \int_a^b |f(x) - g(x)|\,dx$</li>
+          <li><strong>Volume benda putar:</strong> $V = \pi\int_a^b [f(x)]^2\,dx$ (metode cakram)</li>
+        </ul>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Kalkulus adalah topik PALING SERING muncul di TKA Matematika. Kuasai limit bentuk $\frac{0}{0}$, turunan fungsi komposit, dan integral luas daerah.
+        </div>
+      </div>
+
+      <!-- 4. GEOMETRI & VEKTOR -->
+      <div class="content-card" id="geometri">
+        <h2>4. Geometri & Vektor</h2>
+        
+        <h3>4.1 Persamaan Garis Lurus</h3>
+        <div class="formula-box">
+          $y - y_1 = m(x - x_1)$<br>
+          Gradien: $m = \frac{y_2 - y_1}{x_2 - x_1}$<br><br>
+          Dua garis sejajar: $m_1 = m_2$<br>
+          Dua garis tegak lurus: $m_1 \cdot m_2 = -1$
+        </div>
+
+        <h3>4.2 Lingkaran</h3>
+        <div class="formula-box">
+          <strong>Bentuk baku:</strong> $(x-a)^2 + (y-b)^2 = r^2$, pusat $(a,b)$, jari-jari $r$<br><br>
+          <strong>Bentuk umum:</strong> $x^2 + y^2 + Ax + By + C = 0$<br>
+          Pusat: $(-\frac{A}{2}, -\frac{B}{2})$, &nbsp; $r = \sqrt{\frac{A^2}{4} + \frac{B^2}{4} - C}$
+        </div>
+
+        <h3>4.3 Vektor</h3>
+        <div class="formula-box">
+          <strong>Panjang vektor:</strong> $|\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}$<br><br>
+          <strong>Dot product:</strong> $\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3 = |\vec{a}||\vec{b}|\cos\theta$<br><br>
+          <strong>Sudut antar vektor:</strong> $\cos\theta = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}$<br><br>
+          <strong>Cross product:</strong> $\vec{a} \times \vec{b} = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix}$
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Soal vektor di TKA sering menanyakan sudut antara dua vektor, proyeksi vektor, dan luas segitiga menggunakan cross product.
+        </div>
+      </div>
+
+      <!-- 5. STATISTIKA & PELUANG -->
+      <div class="content-card" id="statistika">
+        <h2>5. Statistika & Peluang</h2>
+        
+        <h3>5.1 Ukuran Pemusatan Data</h3>
+        <div class="formula-box">
+          <strong>Mean (rata-rata):</strong> $\bar{x} = \frac{\sum x_i}{n}$<br><br>
+          <strong>Median:</strong> Nilai tengah setelah data diurutkan<br><br>
+          <strong>Modus:</strong> Nilai yang paling sering muncul
+        </div>
+
+        <h3>5.2 Ukuran Penyebaran Data</h3>
+        <div class="formula-box">
+          <strong>Varians:</strong> $s^2 = \frac{\sum (x_i - \bar{x})^2}{n}$<br><br>
+          <strong>Simpangan baku:</strong> $s = \sqrt{s^2}$<br><br>
+          <strong>Jangkauan:</strong> $R = x_{max} - x_{min}$
+        </div>
+
+        <h3>5.3 Peluang</h3>
+        <div class="formula-box">
+          $P(A) = \frac{n(A)}{n(S)}$<br><br>
+          <strong>Peluang komplemen:</strong> $P(A') = 1 - P(A)$<br>
+          <strong>Penjumlahan:</strong> $P(A \cup B) = P(A) + P(B) - P(A \cap B)$<br>
+          <strong>Perkalian (independen):</strong> $P(A \cap B) = P(A) \cdot P(B)$
+        </div>
+
+        <h3>5.4 Kombinatorika</h3>
+        <div class="formula-box">
+          <strong>Permutasi:</strong> $P(n,r) = \frac{n!}{(n-r)!}$<br><br>
+          <strong>Kombinasi:</strong> $C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$
+        </div>
+      </div>
+
+      <!-- 6. BARISAN & DERET -->
+      <div class="content-card" id="barisan">
+        <h2>6. Barisan & Deret</h2>
+        
+        <h3>6.1 Barisan & Deret Aritmetika</h3>
+        <div class="formula-box">
+          <strong>Suku ke-n:</strong> $U_n = a + (n-1)b$<br><br>
+          <strong>Jumlah n suku:</strong> $S_n = \frac{n}{2}(2a + (n-1)b) = \frac{n}{2}(U_1 + U_n)$
+        </div>
+
+        <h3>6.2 Barisan & Deret Geometri</h3>
+        <div class="formula-box">
+          <strong>Suku ke-n:</strong> $U_n = a \cdot r^{n-1}$<br><br>
+          <strong>Jumlah n suku:</strong> $S_n = \frac{a(1-r^n)}{1-r}$ &nbsp; (untuk $r \neq 1$)<br><br>
+          <strong>Deret tak hingga ($|r| < 1$):</strong> $S_\infty = \frac{a}{1-r}$
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Tips TKA</div>
+          Perhatikan bahwa $U_n = S_n - S_{n-1}$ untuk $n \geq 2$. Ini sering digunakan di soal TKA ketika diketahui rumus $S_n$.
+        </div>
+      </div>
+
+      <!-- 7. MATRIKS -->
+      <div class="content-card" id="matriks">
+        <h2>7. Matriks & Transformasi</h2>
+        
+        <h3>7.1 Operasi Matriks</h3>
+        <div class="formula-box">
+          <strong>Perkalian matriks 2×2:</strong><br>
+          $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} e & f \\ g & h \end{pmatrix} = \begin{pmatrix} ae+bg & af+bh \\ ce+dg & cf+dh \end{pmatrix}$
+        </div>
+
+        <h3>7.2 Determinan & Invers</h3>
+        <div class="formula-box">
+          <strong>Determinan:</strong> $\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$<br><br>
+          <strong>Invers:</strong> $A^{-1} = \frac{1}{ad-bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$
+        </div>
+
+        <h3>7.3 Transformasi Geometri</h3>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Transformasi</th><th>Matriks</th></tr>
+            <tr><td>Refleksi terhadap sumbu-x</td><td>$\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$</td></tr>
+            <tr><td>Refleksi terhadap sumbu-y</td><td>$\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$</td></tr>
+            <tr><td>Rotasi $\theta$</td><td>$\begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$</td></tr>
+            <tr><td>Dilatasi faktor $k$</td><td>$\begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix}$</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 8. LOGIKA -->
+      <div class="content-card" id="logika">
+        <h2>8. Logika Matematika</h2>
+        
+        <h3>8.1 Pernyataan & Kalimat Terbuka</h3>
+        <p>Pernyataan (proposisi) adalah kalimat yang memiliki nilai kebenaran <strong>benar (B)</strong> atau <strong>salah (S)</strong>.</p>
+
+        <h3>8.2 Operasi Logika</h3>
+        <div class="table-responsive">
+          <table>
+            <tr><th>Operasi</th><th>Simbol</th><th>Dibaca</th></tr>
+            <tr><td>Negasi</td><td>$\sim p$</td><td>Tidak p</td></tr>
+            <tr><td>Konjungsi</td><td>$p \wedge q$</td><td>p dan q</td></tr>
+            <tr><td>Disjungsi</td><td>$p \vee q$</td><td>p atau q</td></tr>
+            <tr><td>Implikasi</td><td>$p \Rightarrow q$</td><td>Jika p maka q</td></tr>
+            <tr><td>Biimplikasi</td><td>$p \Leftrightarrow q$</td><td>p jika dan hanya jika q</td></tr>
+          </table>
+        </div>
+
+        <h3>8.3 Implikasi & Ekuivalensinya</h3>
+        <div class="formula-box">
+          <strong>Implikasi:</strong> $p \Rightarrow q$<br>
+          <strong>Konvers:</strong> $q \Rightarrow p$<br>
+          <strong>Invers:</strong> $\sim p \Rightarrow \sim q$<br>
+          <strong>Kontraposisi:</strong> $\sim q \Rightarrow \sim p$<br><br>
+          ⚠️ Implikasi <strong>ekuivalen</strong> dengan kontraposisinya!
+        </div>
+
+        <div class="warning-box">
+          <strong>⚠️ Ingat:</strong> Implikasi $p \Rightarrow q$ bernilai SALAH hanya ketika $p$ benar dan $q$ salah.
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="../index.html">Beranda</a>
+      <a href="matematika.html">Matematika</a>
+      <a href="fisika.html">Fisika</a>
+      <a href="latihan-matematika.html">Latihan MTK</a>
+      <a href="latihan-fisika.html">Latihan Fisika</a>
+    </div>
+    <p>📚 TKA Saintek Study — Referensi: Kemendikbudristek | Kurikulum Merdeka</p>
+  </footer>
+
+  <button class="scroll-top">↑</button>
+</body>
+</html>

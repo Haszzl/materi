@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TKA Saintek - Rangkuman & Latihan Soal Matematika & Fisika</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">TKA</div>
+        <span>Saintek Study</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">🏠 Beranda</a></li>
+        <li><a href="pages/matematika.html">📐 Matematika</a></li>
+        <li><a href="pages/fisika.html">⚡ Fisika</a></li>
+        <li><a href="pages/latihan-matematika.html">📝 Latihan MTK</a></li>
+        <li><a href="pages/latihan-fisika.html">📝 Latihan Fisika</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+        <button class="hamburger" onclick="this.nextElementSibling ? null : null">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>📚 TKA Saintek<br>Matematika & Fisika</h1>
+      <p>Rangkuman lengkap dan latihan soal berdasarkan kisi-kisi Kemendikbudristek. Belajar cerdas, raih skor maksimal!</p>
+      <div class="hero-badges">
+        <span class="hero-badge">📐 Matematika</span>
+        <span class="hero-badge">⚡ Fisika</span>
+        <span class="hero-badge">📝 100+ Soal</span>
+        <span class="hero-badge">💡 Pembahasan Lengkap</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="pages/matematika.html" class="btn btn-white">📐 Rangkuman Matematika</a>
+        <a href="pages/fisika.html" class="btn btn-outline-white">⚡ Rangkuman Fisika</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📐</div>
+          <div class="stat-number">8</div>
+          <div class="stat-label">Topik Matematika</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-number">8</div>
+          <div class="stat-label">Topik Fisika</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📝</div>
+          <div class="stat-number">60+</div>
+          <div class="stat-label">Latihan Soal</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💡</div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Ada Pembahasan</div>
+        </div>
+      </div>
+
+      <!-- SUBJECT CARDS -->
+      <h2 class="section-title">Pilih Mata Pelajaran</h2>
+      <p class="section-subtitle">Materi disusun berdasarkan kurikulum terbaru Kemendikbudristek</p>
+
+      <div class="subject-grid">
+        <!-- MATEMATIKA -->
+        <div class="subject-card">
+          <div class="subject-header math">
+            <div class="subject-icon">📐</div>
+            <div>
+              <h3>Matematika</h3>
+              <p>8 topik utama TKA</p>
+            </div>
+          </div>
+          <div class="subject-body">
+            <ul class="topic-list">
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#aljabar" class="topic-link">Aljabar & Persamaan</a>
+                </div>
+                <span class="topic-badge soal">10 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#trigonometri" class="topic-link">Trigonometri</a>
+                </div>
+                <span class="topic-badge soal">8 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#kalkulus" class="topic-link">Kalkulus (Limit, Turunan, Integral)</a>
+                </div>
+                <span class="topic-badge soal">10 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#geometri" class="topic-link">Geometri & Vektor</a>
+                </div>
+                <span class="topic-badge soal">6 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#statistika" class="topic-link">Statistika & Peluang</a>
+                </div>
+                <span class="topic-badge soal">6 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#barisan" class="topic-link">Barisan & Deret</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#matriks" class="topic-link">Matriks & Transformasi</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot math"></span>
+                  <a href="pages/matematika.html#logika" class="topic-link">Logika Matematika</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+            </ul>
+            <div style="margin-top:20px; display:flex; gap:8px; flex-wrap:wrap;">
+              <a href="pages/matematika.html" class="btn btn-primary btn-sm">📖 Rangkuman</a>
+              <a href="pages/latihan-matematika.html" class="btn btn-success btn-sm">📝 Latihan Soal</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FISIKA -->
+        <div class="subject-card">
+          <div class="subject-header physics">
+            <div class="subject-icon">⚡</div>
+            <div>
+              <h3>Fisika</h3>
+              <p>8 topik utama TKA</p>
+            </div>
+          </div>
+          <div class="subject-body">
+            <ul class="topic-list">
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#mekanika" class="topic-link">Mekanika (Gerak & Gaya)</a>
+                </div>
+                <span class="topic-badge soal">10 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#usaha" class="topic-link">Usaha, Energi & Momentum</a>
+                </div>
+                <span class="topic-badge soal">8 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#fluida" class="topic-link">Fluida Statis & Dinamis</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#termodinamika" class="topic-link">Termodinamika</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#gelombang" class="topic-link">Gelombang & Bunyi</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#listrik" class="topic-link">Listrik & Magnet</a>
+                </div>
+                <span class="topic-badge soal">8 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#optik" class="topic-link">Optik (Cahaya & Lensa)</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+              <li>
+                <div class="topic-info">
+                  <span class="topic-dot physics"></span>
+                  <a href="pages/fisika.html#modern" class="topic-link">Fisika Modern & Atom</a>
+                </div>
+                <span class="topic-badge soal">5 soal</span>
+              </li>
+            </ul>
+            <div style="margin-top:20px; display:flex; gap:8px; flex-wrap:wrap;">
+              <a href="pages/fisika.html" class="btn btn-danger btn-sm">📖 Rangkuman</a>
+              <a href="pages/latihan-fisika.html" class="btn btn-success btn-sm">📝 Latihan Soal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS SECTION -->
+  <section class="section" style="background: var(--card-bg); border-top: 1px solid var(--border);">
+    <div class="container">
+      <h2 class="section-title">💡 Tips Mengerjakan TKA Saintek</h2>
+      <p class="section-subtitle">Strategi jitu agar bisa meraih skor maksimal</p>
+      
+      <div class="subject-grid">
+        <div class="content-card">
+          <h3>🎯 Strategi Umum</h3>
+          <ul>
+            <li><strong>Kenali pola soal</strong> – Pelajari soal-soal tahun sebelumnya</li>
+            <li><strong>Manajemen waktu</strong> – Jangan terlalu lama di satu soal</li>
+            <li><strong>Eliminasi jawaban</strong> – Buang opsi yang jelas salah</li>
+            <li><strong>Baca soal teliti</strong> – Perhatikan kata kunci dan satuan</li>
+            <li><strong>Latihan rutin</strong> – Minimal 10 soal per hari</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3>📊 Prioritas Belajar</h3>
+          <ul>
+            <li><strong>Matematika:</strong> Kalkulus, Aljabar, dan Trigonometri paling sering keluar</li>
+            <li><strong>Fisika:</strong> Mekanika dan Listrik-Magnet bobot soal terbesar</li>
+            <li><strong>Hafal rumus dasar</strong> – Buat catatan rumus di satu halaman</li>
+            <li><strong>Pahami konsep</strong> – Jangan hanya menghafal, pahami "mengapa"</li>
+            <li><strong>Gunakan gambar</strong> – Visualisasi membantu memahami soal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pages/matematika.html">Matematika</a>
+      <a href="pages/fisika.html">Fisika</a>
+      <a href="pages/latihan-matematika.html">Latihan MTK</a>
+      <a href="pages/latihan-fisika.html">Latihan Fisika</a>
+    </div>
+    <p>📚 TKA Saintek Study — Referensi: Kemendikbudristek | Kurikulum Merdeka</p>
+    <p style="margin-top:8px; font-size:0.85rem;">Dibuat untuk persiapan seleksi masuk perguruan tinggi negeri</p>
+  </footer>
+
+  <button class="scroll-top">↑</button>
+
+</body>
+</html>
